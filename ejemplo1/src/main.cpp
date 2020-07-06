@@ -55,12 +55,12 @@ StaticJsonDocument<512> horaActual;
 
 
 const char *ssid="INFINITUM1747_2.4";
-const char *passwrd="rBNUnK1nRs";
+const char *pass="rBNUnK1nRs";
 
 
 void setup() {
   Serial.begin(115200);
-  webInterface= new connWeb(ssid,passwrd);
+  webInterface= new connWeb(ssid,pass);
   reloj=new DateTime();
   
 }
